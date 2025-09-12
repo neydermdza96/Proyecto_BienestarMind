@@ -13,7 +13,8 @@ class AsesoriumController extends Controller
      */
     public function index()
     {
-        //
+        $asesoriums = Asesorium::all();
+        return view("asesorium.index", compact("asesoriums"));
     }
 
     /**
