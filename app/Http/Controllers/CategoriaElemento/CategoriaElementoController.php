@@ -13,7 +13,8 @@ class CategoriaElementoController extends Controller
      */
     public function index()
     {
-        //
+        $categoriaelementos = CategoriaElemento::all();
+        return view("categoriaelementos.index", compact("categoriaelementos"));
     }
 
     /**
